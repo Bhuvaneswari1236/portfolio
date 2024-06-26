@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <title>Bhuvaneswari Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(20, 0, 66);
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 140px;
+            background-color: rgba(78, 78, 106, 0.292);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            margin: 0 30px;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(174, 70, 234);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: blueviolet;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2.5 rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+            background-color: rgb(20, 0, 66);
+        }
+
+        .leftsection {
+            background-color: black;
+            font-size: 3rem;
+            margin: 50px 0;
+        }
+
+        .leftsection .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: aliceblue;
+            border: 3px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 20px 10px;
+            text-decoration: none;
+        }
+
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 50%;
+        }
+
+
+        .purple {
+            color: blueviolet;
+
+        }
+
+        #element {
+            color: blueviolet;
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .grey {
+            color: rgb(172, 137, 204);
+
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 76vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            left: -20px;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: aliceblue;
+            margin: 0 140px;
+            left: -20px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -33px;
+            left: -9px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 70px;
+            width: 130px;
+            left: -30px;
+
+            color: blueviolet;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(226, 212, 239);
+            width: 170px;
+            font-size: 12px;
+            left: -30px;
+        }
+
+        .thirdsection {
+            max-width: 30vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .thirdsection .Tt {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+            color: blueviolet;
+
+        }
+
+        .thirdsection .Tl {
+            position: relative;
+            text-align: left;
+            justify-content: left;
+            right: -150px;
+            padding: 2px;
+            bottom: -15%;
+
+        }
+
+        .thirdsection .Img {
+            width: 30%;
+            display: flex;
+            align-items: last baseline;
+            margin: 20px 10px;
+            border-left: 15px;
+
+        }
+
+        .careerobj {
+            max-width: 40vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .careerobj .Tt {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+            color: blueviolet;
+
+        }
+
+        .careerobj .Tl {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            padding: 4px;
+            bottom: -3%;
+
+        }
+
+        .careerobj .Img {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            margin: 10px 250px;
+            border-left: 15px;
+
+        }
+
+        footer {
+            background-color: rgba(78, 78, 106, 0.292);
+            box-shadow: 30%;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .text-center {
+            text-align: center;
+            color: gray;
+            padding: 12 0;
+        }
+
+        .aboutsection {
+            padding: 80px 0;
+            color: blueviolet
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about_col1 {
+            flex-basis: 35%;
+
+        }
+
+        .about_col1 .icons {
+            color: aliceblue;
+            margin-right: 20px;
+            font-size: medium;
+            margin-top: auto;
+            text-decoration: none;
+            display: inline;
+            transition: transform(0.5);
+
+        }
+
+        .about_col1 .icons i:hover {
+            color: blueviolet;
+            transform: translate(0, -5px);
+        }
+
+        .about_col2 {
+            flex-basis: 40%;
+            display: flex;
+
+        }
+
+        .about_col2 .btn {
+            color: black;
+            font-size: medium;
+            background-color: blueviolet;
+            padding: 10px;
+
+        }
+
+        .about_col2 form {
+            width: 100%;
+
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: iceblue;
+            padding: 15px;
+            margin: 15px 0;
+            color: black;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhuvana's Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="#frst">Home</a></li>
+
+                    <li><a href="#firstsection">About</a></li>
+
+                    <li><a href="#secondsection">Skills And Certifications</a></li>
+                    <li><a href="#contactsection">Contact Me</a></li>
+
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="frst"></div>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is<span class="purple"> Bhuvana..</span>
+
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="image/21jg1a0412 resume (1).docx"> <button class="btn">Download Resume</button></a>
+                    <a href="https://www.linkedin.com/in/
+                    bhuvaneswari-bezawada-00bb89250"><button class="btn">visit Linkedin</button></a>
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+
+                <img src="image/pic1.png">
+            </div>
+        </section>
+        </div>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">What i have done...?</span>
+            <h1>Skills And Certifications</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="image/images.png" alt="">
+                    <div class="vertical-text">
+                        Skills:Java,Python,C,HTML ,CSS,JavaScript
+                    </div>
+                    <div class="vertical-desc">Completed Couress and Certified in Java ,Python in Websites like Udemy
+                        ,Edyst, And From Nptel </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image/images.png" alt="">
+                    <div class="vertical-text">
+                        Skills:DBMS,JAVA,SALESFORCE
+                    </div>
+                    <div class="vertical-desc">PWC Launchpad Trainee-2024.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image/images.png" alt="">
+                    <div class="vertical-text">
+                        Intern
+                    </div>
+                    <div class="vertical-desc">Completed My internship in webdevelopment Domain in InternPe
+                        also in BSNL in domain telecommunication.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image/images.png" alt="">
+                    <div class="vertical-text">
+                        Skills:Webdeveloper
+                    </div>
+                    <div class="vertical-desc">Google developer student club core member as web developer. </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="careerobj">
+            <span>
+                <div class="Tt">CAREER OBJECTIVE</div>
+            </span>
+            <div class="Tl">
+                <img class="Img" src="image/pic2.png" alt="">
+                <div> Current student looking to join the workforce to gain real-world experience. Ability to complete
+                    tasks on time in both individual and team settings. Dependable and reliable, ready to learn and grow
+                    with your company.To secure a challenging position in a reputable organization to expand my
+                    learnings ,knowledge, and
+                    skills.</div>
+
+
+
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <span>
+                <div class="Tt">Additional Skills</div>
+            </span>
+            <div class="Tl">
+                <img class="Img" src="image/pic3.png" alt="">
+                <ul>
+                    <div>Good At Communication</div>
+                </ul>
+                <ul>
+                    <div>Problem-Solving</div>
+                </ul>
+                <ul>
+                    <div>Time management</div>
+                </ul>
+                <ul>
+                    <div>Confident</div>
+                </ul>
+                <ul>
+                    <div>Team Work</div>
+                </ul>
+            </div>
+
+
+        </section>
+        <hr>
+        <section>
+            <div id="contactsection">
+                <div class="container">
+                    <div class="row">
+                        <div class="about_col1">
+
+                            <h1 class="subtitle">Contact Me</h1>
+                            <p>Email:bhuvaneswaribezawada@gmail.com</p>
+                            <p>Call:9324292881</p>
+                            <div class="icons">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-whatsapp"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </div>
+                        <div class="about_col2">
+                            <form action="contact_form.php" method="POST">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="message " rows="6" placeholder="Your message"></textarea>
+                                <button type="submit" class="btn">Submit</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            3
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bhuvana's Portfolio</h3>
+            </div>
+
+
+        </div>
+        <div class="text-center">
+            Copyright &#169; www.bhuvanaportfolio.com| All rights reservered
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Java Developer', 'Frontend Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
