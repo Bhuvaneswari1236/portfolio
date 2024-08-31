@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Internships</title>
+    <style>
+        body {
+            background-color: rgb(20, 0, 66);
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 140px;
+            background-color: rgba(78, 78, 106, 0.292);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            margin: 0 30px;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(174, 70, 234);
+            font-size: 1.02rem;
+        }
+
+        h1 {
+            color: blueviolet;
+            margin-bottom: 40px;
+        }
+
+        .internship {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid blueviolet;
+            /* Add blueviolet border */
+        }
+
+        .internship img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .internship-title {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: blueviolet;
+        }
+
+        .internship-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Add a responsive grid for displaying internships side by side */
+        .internships-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhuvana's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mycertifications.html">Skills And Certifications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="#contactsection">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Internships</h1>
+        <div class="internships-container">
+            <!-- Internship 1: Web Development -->
+            <div class="internship">
+                <img src="image/web.jpg" alt="Web Development Internship">
+                <div class="internship-title">Web Development Internship</div>
+                <div class="internship-description">
+                    <strong>Company:</strong> Internpe, Rajasthan<br>
+                    <strong>Duration:</strong> Aug 2023 - Sep 2023 (1 month)<br>
+                    Created dynamic websites using HTML, CSS, and JavaScript.
+                    Gained practical experience in front-end development and designing visually appealing web pages.
+                </div>
+            </div>
+
+            <!-- Internship 2: Telecommunication -->
+            <div class="internship">
+                <img src="image/bsnl.jpg" alt="Telecommunication Internship">
+                <div class="internship-title">Telecommunication Internship</div>
+                <div class="internship-description">
+                    <strong>Company:</strong> BSNL, Visakhapatnam<br>
+                    <strong>Duration:</strong> May 2023 - Jun 2023 (1 month)<br>
+                    Led network configuration, troubleshooting, and optimization tasks.
+                    Gained hands-on skills and contributed to driving innovation in telecom.
+                </div>
+            </div>
+
+            <!-- Internship 3: Java Full-Stack Development -->
+            <div class="internship">
+                <img src="image/excerl.jpg" alt="Java Full-Stack Development Internship">
+                <div class="internship-title">Java Full-Stack Development Internship</div>
+                <div class="internship-description">
+                    <strong>Company:</strong> Excelr (Virtual Internship)<br>
+                    <strong>Duration:</strong> Mar 2024 - May 2024 (2 months)<br>
+                    Worked on Java Full-Stack development projects, focusing on both front-end and back-end development
+                    using Java, Spring Boot, and MySQL.
+                    Enhanced skills in developing RESTful APIs, integrating databases, and building dynamic web pages.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

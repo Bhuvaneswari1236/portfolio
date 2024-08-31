@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Projects and Internships</title>
+    <style>
+        body {
+            background-color: rgb(20, 0, 66);
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 140px;
+            background-color: rgba(78, 78, 106, 0.292);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            margin: 0 30px;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(174, 70, 234);
+            font-size: 1.02rem;
+        }
+
+        h1 {
+            color: blueviolet;
+            margin-bottom: 40px;
+        }
+
+        .project {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid blueviolet;
+            /* Add border */
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: blueviolet;
+        }
+
+        .project-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project-links a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add a responsive grid for displaying projects side by side */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhuvana's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mycertifications.html">Skills And Certifications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="#contactsection">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <img src="image/port.jpg" alt="Portfolio Project">
+                <div class="project-title">Portfolio Website</div>
+                <div class="project-description">
+                    Developed a personal portfolio website to showcase projects, skills, and experiences. Features
+                    include:
+                    <ul>
+                        <li>Project showcase with images and descriptions.</li>
+                        <li>Interactive elements like project filtering and image sliders.</li>
+                        <li>Clean and professional design highlighting personal branding and skills.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://bhuvaneswari1236.github.io/portfolio/" target="_blank">View Live</a> |
+                    <a href="https://github.com/Bhuvaneswari1236/portfolio" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="image/Screenshot 2024-08-30 181223.png" alt="Shopping Website Project">
+                <div class="project-title">Shopping Website</div>
+                <div class="project-description">
+                    Created a functional and visually appealing shopping website for browsing and purchasing products.
+                    Features include:
+                    <ul>
+                        <li>Product listings with images, descriptions, and prices.</li>
+                        <li>Enhanced user experience with interactivity and animations.</li>
+                        <li>Interactive shopping cart.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://bhuvaneswari1236.github.io/Shoping-Website/" target="_blank">View Live</a> |
+                    <a href="https://github.com/Bhuvaneswari1236/Shoping-Website" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="image/smart.jpg" alt="Smart Handwash Dispenser Project">
+                <div class="project-title">Smart Handwash Dispenser</div>
+                <div class="project-description">
+                    Developed a smart handwash dispenser to promote hygiene by minimizing physical contact. Features
+                    include:
+                    <ul>
+                        <li>Touchless operation for improved hygiene.</li>
+                        <li>Controlled and consistent soap dispensing.</li>
+                        <li>Energy-efficient design, user-friendly, and easily maintainable.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
